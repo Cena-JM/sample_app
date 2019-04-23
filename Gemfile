@@ -6,9 +6,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'bcrypt',         '3.1.12'
-gem 'bootstrap-sass', '3.4.1'
-gem 'rails', '~> 5.2.3'
+gem 'rails',                    '~> 5.2.3'
+gem 'bcrypt',                   '3.1.12'
+gem 'bootstrap-sass',           '3.4.1'
+gem 'faker',                    '1.9.3'
+gem 'will_paginate',            '3.1.6'
+gem 'bootstrap-will_paginate',  '1.0.0'
+
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'sqlite3', '~> 1.3.13'
