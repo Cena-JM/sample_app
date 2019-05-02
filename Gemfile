@@ -9,7 +9,9 @@ ruby '2.6.2'
 gem 'rails',                    '~> 5.2.3'
 gem 'bcrypt',                   '3.1.12'
 gem 'bootstrap-sass',           '3.4.1'
-gem 'faker',                    '1.9.3'
+gem 'faker',                   '1.7.3'
+gem 'carrierwave',             '1.2.2'
+gem 'mini_magick',             '4.7.0'
 gem 'will_paginate',            '3.1.6'
 gem 'bootstrap-will_paginate',  '1.0.0'
 
@@ -47,6 +49,11 @@ gem 'jbuilder', '~> 2.7.0'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+
+group :production do
+  gem 'pg',  '0.20.0'
+  gem 'fog', '1.42'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
